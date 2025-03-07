@@ -1,0 +1,456 @@
+h1{
+  text-align: center;
+  font-family: sans-serif;
+  color:white;
+}
+
+.logo-container{
+  text-align: center;
+}
+
+.logo{
+  max-width: 160px;
+  margin-top:10px;
+  padding: 5px;
+}
+
+.search-container {
+  text-align: center;
+  padding: 5px;
+}
+
+.search, .userInput, .passInput, .billAdrInput, .shipAdrInput, .addressInput{
+  width: 200px;
+  height: 5%;
+  padding:5px;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #0e2740; 
+  position: fixed; 
+  overflow:auto;
+  top: 0; 
+  left: 0; 
+  align-items: center;
+}
+
+.pageHeader{
+  text-align: left;
+
+  font-family: sans-serif;
+}
+
+.route{
+  padding-top: 180px;
+}
+
+.home, .item, .signin, .signup, .cart, .profile, .checkout, .order {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.home {
+  padding-bottom: 10%;
+}
+
+.filters{
+  text-align: left;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px; 
+  justify-content: center;
+}
+
+.resultsButton{
+  padding: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+  background-color: #085fb6;
+  color: white;
+  border-radius: 6px;
+  border-color: #0e2740;
+}
+
+
+.card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cart-container, .checkout-container{
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+
+.cartItems, .checkoutItems {
+  text-align: center;
+  font-family: sans-serif;
+  width: 1250px;
+}
+
+.cartItem {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  font-family: sans-serif;
+  width: 1200px;
+  height: 150px;
+}
+
+.cartItem img {
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.cartInfo {
+  float: left;
+}
+
+.cartEdit {
+  float: right;
+  text-align: right;
+}
+
+.cartEdit input {
+  clear: both;
+  width: 50px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.removeItem button {
+  display: inline;
+  margin-left: 10px;
+}
+
+.buy-container, .order-container{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  width: 200px;
+  height: 250px;
+}
+
+.buyText{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.shipping {
+  padding-bottom: 50px;
+}
+
+.addButton, .checkoutButton, .signInButton, .signUpButton{
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  margin-top: 40px;
+  border-style: solid;
+  background-color: #0e2740;
+  border-color: #0e2740;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.addButton {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.addButton:hover, .checkoutButton:hover, .signInButton:hover, .signUpButton:hover{
+  background-color: #276db3;
+  border-color: #276db3;
+  cursor: pointer;
+  
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 5px;
+  padding: 2px;
+  text-decoration: none;
+  color:white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.links :hover {
+  background-color: #276db3;
+  border-color: #276db3;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.item img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 2%;
+}
+
+.reviews {
+  width: 100%;
+}
+
+.singleReview, .leaveReview {
+  border: 1px solid lightgray;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.reviewDate {
+  float:right;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.stars {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.starfilled {
+  color: gold;
+}
+
+.starempty {
+  color: #ccc;
+}
+
+.leaveReview {
+  margin-bottom: 30px;
+  position: relative;
+  border: 1px solid #0e2740;
+}
+
+.reviewInput {
+  width: 95%;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  resize: vertical;
+}
+
+.rating {
+  font-size: 36px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.rating .starfilled {
+  color: gold;
+}
+
+.rating .starempty {
+  color: #ccc;
+}
+
+.leaveReview button {
+  background-color: #0e2740;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position:absolute;
+  bottom: 30px;
+  right: 24px;
+}
+
+.leaveReview button:hover {
+  background-color: #276db3;
+}
+
+.editReview {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.editButtons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.editButtons button {
+  position: static;
+  bottom: auto;
+  right: auto;
+}
+
+.editButtons .reviewDelete {
+  background-color: #b52343;
+}
+
+.editButtons .reviewDelete:hover {
+  background-color: #ff0037;
+}
+
+.signin, .signup, .profile{
+  text-align: center;
+  font-family: sans-serif;
+  border: 1px solid lightgray;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 20%;
+
+}
+
+.checkout{
+  font-family: sans-serif;
+}
+
+.order{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.admin, .userHistory{
+  font-family: sans-serif;
+}
+
+.salesTable, .inventoryTable, .accountTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.salesTable th, .salesTable td, .inventoryTable th, .inventoryTable td, .accountTable th, .accountTable td{
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.salesTable th ,.inventoryTable th, .accountTable th{
+  background-color: #f2f2f2;
+}
+
+.inventoryTable .adminAdd {
+  text-align: center;
+  padding: 20px;
+}
+
+label{
+  font-family: sans-serif;
+}
+
+.adminEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adminEditFields {
+  display: flex;
+  align-items: center;
+}
+
+.adminEditFields label {
+  flex: 0 100px;
+  margin-right: 10px;
+}
+
+.adminEditFields input, .adminEditFields textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.adminEdit button {
+  height: 2rem;
+}
+
+.adminDeleteItem {
+  float:right;
+  height: 2rem;
+  background-color:red;
+  color: white;
+}
+
+.adminEdit p {
+  text-align: center;
+  background-color: rgb(65, 155, 90);
+  color: white;
+  padding: 10px;
+  min-width: 50%;
+  align-self: center;
+  border-radius: 4px;
+}
+
+.admin, .userHistory {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.adminButton {
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.searchButton {
+  padding: 4px;
+  font-size: 14px;
+  margin-left: 4px;
+  cursor: pointer;
+  background-color: #276db3;
+  color: white;
+  border-radius: 6px;
+  border-color: #0e2740;
+  cursor: pointer;
+}
+
+
